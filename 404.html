@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NDFITNESS</title>
 
-<base href="/NDFITNESS/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NDFITNESS</title>
 
 <link rel="stylesheet" href="./main.7bde35c1.css">
 
@@ -17,6 +17,17 @@
 <div id="root"></div>
 
 <script src="./main.089e52c8.js"></script>
+
+<script>
+/* GitHub pages routing fix */
+(function () {
+  var redirect = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  if (redirect && redirect != location.href) {
+    history.replaceState(null, null, redirect);
+  }
+})();
+</script>
 
 </body>
 
