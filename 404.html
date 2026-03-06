@@ -1,42 +1,10 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="theme-color" content="#000000"/>
-<meta name="description" content="NDFITNESS"/>
-
-<base href="/NDFITNESS/">
-
-<title>NDFITNESS</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet"/>
-
-<link href="./main.7bde35c1.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-<noscript>You need to enable JavaScript to run this app.</noscript>
-
-<div id="root"></div>
 <script>
-(function() {
-  const path = window.location.pathname;
-  if (path.startsWith('/NDFITNESS')) {
-    const newPath = path.replace('/NDFITNESS', '');
-    window.history.replaceState({}, '', newPath || '/');
-  }
-})();
+sessionStorage.redirect = location.href;
+location.replace("/NDFITNESS/");
 </script>
-
-<script src="./main.089e52c8.js"></script>
-
-</body>
+</head>
+<body></body>
 </html>
